@@ -1,6 +1,7 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		HTML
 %define		_subclass	Crypt
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Encrypts text which is later decoded using javascript on the client side
@@ -25,12 +26,16 @@ useful to prevent spam robots collecting email addresses from your
 site, included is a method to add mailto links to the text being
 generated.
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 PEAR::HTML_Crypt dostarcza metody szyfrowania tekstu, który mo¿e byæ
 potem rozszyfrowany przy u¿yciu JavaScriptu po stronie klienta. Jest
 to u¿yteczne aby nie pozwoliæ robotom spamowym zbieraæ adresy mailowe
 z twojej strony, w³±czaj±c w to dodawanie linków mailto do
 generowanego tekstu.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
