@@ -5,11 +5,11 @@
 Summary:	%{_pearname} - Encrypts text which is later decoded using javascript on the client side
 Summary(pl):	%{_pearname} - Szyfruje tekst, który jest po stronie klienta rozkodowany javascriptem
 Name:		php-pear-%{_pearname}
-Version:	1.1
-Release:	2
+Version:	1.2
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	b00137cb724b464806e8068b8eebfb9d
+# Source0-md5:	b97e9ce0c83dd0c06240aece61a7116f
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-88
