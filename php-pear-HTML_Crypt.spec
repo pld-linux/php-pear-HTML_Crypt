@@ -26,7 +26,7 @@ useful to prevent spam robots collecting email addresses from your
 site, included is a method to add mailto links to the text being
 generated.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 PEAR::HTML_Crypt dostarcza metody szyfrowania tekstu, który mo¿e byæ
