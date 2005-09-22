@@ -8,7 +8,7 @@ Summary:	%{_pearname} - Encrypts text which is later decoded using javascript on
 Summary(pl):	%{_pearname} - Szyfruje tekst, który jest po stronie klienta rozkodowany javascriptem
 Name:		php-pear-%{_pearname}
 Version:	1.2.2
-Release:	3
+Release:	3.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -38,17 +38,18 @@ generowanego tekstu.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc install.log
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
