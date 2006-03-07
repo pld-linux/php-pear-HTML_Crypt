@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	6c1b71916675f3ecceca08c5931dab53
 URL:		http://pear.php.net/package/HTML_Crypt/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.0.2-88
 Requires:	php-pear
 BuildArch:	noarch
