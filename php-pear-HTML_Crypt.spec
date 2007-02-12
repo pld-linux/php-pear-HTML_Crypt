@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Encrypts text which is later decoded using javascript on the client side
-Summary(pl):	%{_pearname} - Szyfruje tekst, który jest po stronie klienta rozkodowany javascriptem
+Summary(pl.UTF-8):   %{_pearname} - Szyfruje tekst, ktÃ³ry jest po stronie klienta rozkodowany javascriptem
 Name:		php-pear-%{_pearname}
 Version:	1.3.1
 Release:	1
@@ -30,11 +30,11 @@ generated.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-PEAR::HTML_Crypt dostarcza metody szyfrowania tekstu, który mo¿e byæ
-potem rozszyfrowany przy u¿yciu JavaScriptu po stronie klienta. Jest
-to u¿yteczne aby nie pozwoliæ robotom spamowym zbieraæ adresy mailowe
-z twojej strony, w³±czaj±c w to dodawanie linków mailto do
+%description -l pl.UTF-8
+PEAR::HTML_Crypt dostarcza metody szyfrowania tekstu, ktÃ³ry moÅ¼e byÄ‡
+potem rozszyfrowany przy uÅ¼yciu JavaScriptu po stronie klienta. Jest
+to uÅ¼yteczne aby nie pozwoliÄ‡ robotom spamowym zbieraÄ‡ adresy mailowe
+z twojej strony, wÅ‚Ä…czajÄ…c w to dodawanie linkÃ³w mailto do
 generowanego tekstu.
 
 Ta klasa ma w PEAR status: %{_status}.
